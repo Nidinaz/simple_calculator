@@ -1,0 +1,75 @@
+.main-container {
+    display: grid;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .toppage {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+  }
+  
+  h1 {
+    margin-left: 1rem;
+  }
+  
+  .screen {
+    /* width: 21%; */
+    height: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  input::placeholder {
+    height: 3rem;
+  }
+  
+  .screen_item {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid white;
+    background-color: var(--color-black);
+    text-align: right;
+    padding-right: 1em;
+    font-size: 1.2rem;
+  }
+  
+  .keypad {
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: repeat(4, 3rem [col-start]);
+    grid-template-rows: repeat(5, 3rem [row-start]);
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .button_0 {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+  
+  .button_is {
+    grid-area: 4 / 4 / 6 / 5;
+  }
+  .button_plus {
+    grid-area: 2 / 4 / 4 / 5;
+  }
+  
+  .keypad__button {
+    /* margin-top: 0.5rem; */
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    color: var(--light-lightness);
+    background-color: var(--dark-lightness);
+    border: 1px solid green;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
